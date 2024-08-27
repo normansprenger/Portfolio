@@ -1,1 +1,24 @@
-<p>references works!</p>
+<section id="references">
+    <h2 class="fontFiraCode">What my colleagues say about me</h2>
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <div *ngFor="let reference of references; let i = index"
+                 class="reference">
+                <span class="testimonial-text">{{ reference.text }}</span>
+                <div class="reference-bottom">
+                    <div class="dekorow"></div>
+                    <span class="testimonial-author">{{ reference.author }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="slider-bottom">
+            <div class="arrow arrowLeft" (click)="prevReference()"></div>
+            <div *ngFor="let point of points; let i = index"
+                 class="point"
+                 [ngClass]="{'active': i === currentIndex}"
+                 (click)="goToReference(i)">
+            </div>
+            <div class="arrow arrowRight" (click)="nextReference()"></div>
+        </div>
+    </div>
+</section>

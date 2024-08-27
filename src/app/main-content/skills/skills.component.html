@@ -55,9 +55,10 @@
             <img src="./assets/img/icons/scrumIcon.png" alt="skill image">
             <span>Scrum</span>
         </div>
-        <div class="skill">
-            <img src="./assets/img/icons/growthIcon.png" alt="skill image">
-            <span>Growth<br>mindset</span>
+        <div class="skill" (mouseenter)="showWannaLearn()" (mouseleave)="hideWannaLearn()">
+            <img src="./assets/img/icons/growthIcon.png" alt="skill image" class="growth-icon">
+            <span style="color: #3DCFB6;">Growth<br>mindset</span>
+            <img src="./assets/img/icons/wannaLearn.png" alt="" class="wanna-learn" [ngStyle]="{'opacity': wannaLearnVisible ? '1' : '0', 'visibility': wannaLearnVisible ? 'visible' : 'hidden'}">
         </div>
     </div>
 </section>

@@ -1,0 +1,90 @@
+section {
+    width: 100vw;
+    max-width: 100%;
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 16px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.projects-top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .label {
+        color: #3DCFB6;
+        font-size: 18px;
+    }
+
+    h2 {
+        color: #3DCFB6;
+        font-weight: 700;
+        font-family: Fira Code;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin: 16px 0px 32px 0px;
+    }
+
+    span {
+        color: white;
+    }
+}
+
+.projects-bottom {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+
+    .separator {
+        height: 1px;
+        width: 100%;
+        background-color: #3DCFB6;
+    }
+}
+
+.project {
+    padding: 32px 0px;
+    width: 100%;
+    &:hover{
+        background: #3DCFB64D;
+        cursor: pointer;
+
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    span {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        color: white;
+        span{
+            color: #3DCFB6;
+        }
+    }
+}

@@ -1,6 +1,5 @@
 section {
     width: 100vw;
-    min-height: 100vh;
     max-width: 100%;
     background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgb(8, 70, 59) 0%, #1C1C1C 100%);
     display: flex;
@@ -88,33 +87,42 @@ section {
     flex-wrap: wrap;
     gap: 16px;
     margin-top: 40px;
+}
 
-    .skill {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 104px;
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 104px;
+    height: 84px;
 
-        img {
-            width: 64px;
-            height: 64px;
+    img {
+        width: 64px;
+        height: 64px;
 
-            &:hover {
-                animation: bounce 0.8s infinite ease-in-out;
-            }
-
+        &:hover {
+            animation: bounce 0.8s infinite ease-in-out;
         }
-
-        span {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19.2px;
-            letter-spacing: -0.03em;
-            text-align: center;
-            color: white;
-        }
-
     }
+
+    span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: white;
+    }
+}
+
+.wanna-learn{
+    transition: 0.2s ease-in-out;
+    position: relative;
+    bottom: 210px;
+    left: 40px;
+    width: 188px !important;
+    height: 129px !important;
+    animation: none !important;
 }
 
 
@@ -122,9 +130,11 @@ section {
     0% {
         transform: scale(1.0);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1.0);
     }
